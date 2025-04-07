@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: linear-gradient(110deg, black 35%, #3a003a);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding: 20px;
+  border: 1px solid transparent;
+}
+
+.header {
+  background: linear-gradient(135deg, black 74%, #280028);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.header img {
+  height: 50px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+.footer {
+  display: flex;
+  text-align: center;
+  padding-top: 250px;
+  justify-content: center;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px;
+  width: 100%;
+}
+.hero td {
+  width: 50%;
+  text-align: left;
+}
+.hero img {
+  max-width: 450px;
+  height: auto;
+}
+.cta {
+  margin-top: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: purple;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 6px;
+  font-size: 15px;
+}
+.btnTransparent {
+  display: inline-block;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid purple;
+  color: purple;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 14px;
+}
+.btnMenor {
+  display: inline-block;
+  padding: 5px 10px;
+  background: purple;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.footer td {
+  padding: 10px;
+}
+span {
+  color: purple;
+}
+.categorias {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.container-categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  gap: 65px;
+  justify-items: center;
+  margin-top: 40px;
+}
+.categoria {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid white;
+}
+.categoria:hover {
+  transform: scale(1.05);
+}
+.categoria img {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+.categoria p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+tr.categorias td {
+  padding-top: 50px;
+}
+.svg-divider {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+.hero img {
+  max-width: 850px;
+  height: auto;
+}
+.contato {
+  height: 100%;
+}
+.container-contato {
+  max-width: 400px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #000000, #3b0066);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.container-contatoD {
+  padding-top: 210px;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contato label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-contato button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  background-color: purple;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-contato button:hover {
+  background-color: #5e2d91;
+}
+.footer-final {
+  background: linear-gradient(135deg,  black 55%, #3b0066);
+  color: white;
+  padding: 40px 20px 20px;  
+  font-family: "Roboto", sans-serif;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.rodape-conteudo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.logo-footer img {
+  height: 60px;
+}
+
+.links-rapidos,
+.contato-info {
+  margin: 10px 20px;
+  min-width: 200px;
+}
+
+.links-rapidos h3,
+.contato-info h3 {
+  color: #bb86fc;
+  margin-bottom: 10px;
+}
+
+.links-rapidos a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.links-rapidos a:hover {
+  color: #bb86fc;
+}
+
+.copy {
+  border-top: 1px solid #bb86fc44;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #cccccc;
+}
